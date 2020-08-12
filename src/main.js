@@ -25,6 +25,8 @@ Vue.use(VCharts)
 
 Vue.config.productionTip = false
 
+console.log("process.env.BASE_API: "+process.env.BASE_API);
+
 new Vue({
   el: '#app',
   router,

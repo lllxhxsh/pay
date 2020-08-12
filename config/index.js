@@ -13,7 +13,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-              target: 'https://lxpay.gateway.test.bolod.xin:19200',
+              target: 'http://192.168.3.128:21000',
               changeOrigin: true,
               secure:false,
               pathRewrite: {
@@ -63,6 +63,25 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: './',
+    proxyTable: {
+      '/api': {
+              target: 'https://lxpay.gateway.test.bolod.xin:19200',
+              changeOrigin: true,
+              secure:false,
+              pathRewrite: {
+              '^/api': ''
+              }
+            },
+      '/opens': {
+              target: 'https://192.168.3.122:12000',
+              changeOrigin: true,
+              secure:false,
+              pathRewrite: {
+              '^/opens': ''
+              }
+            }
+
+    },
 
     /**
      * Source Maps
