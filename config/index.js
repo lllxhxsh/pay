@@ -12,22 +12,22 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {
-              target: 'http://192.168.3.128:21000',
-              changeOrigin: true,
-              secure:false,
-              pathRewrite: {
-              '^/api': ''
-              }
-            },
-      '/opens': {
-              target: 'https://192.168.3.122:12000',
-              changeOrigin: true,
-              secure:false,
-              pathRewrite: {
-              '^/opens': ''
-              }
-            }
+      // '/api': {
+      //         target: 'http://192.168.3.128:21000',
+      //         changeOrigin: true,
+      //         secure:false,
+      //         pathRewrite: {
+      //         '^/api': ''
+      //         }
+      //       },
+      // '/opens': {
+      //         target: 'https://192.168.3.122:12000',
+      //         changeOrigin: true,
+      //         secure:false,
+      //         pathRewrite: {
+      //         '^/opens': ''
+      //         }
+      //       }
 
     },
 
@@ -64,22 +64,22 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: './',
     proxyTable: {
-      '/api': {
-              target: 'https://lxpay.gateway.test.bolod.xin:19200',
-              changeOrigin: true,
-              secure:false,
-              pathRewrite: {
-              '^/api': ''
-              }
-            },
-      '/opens': {
-              target: 'https://192.168.3.122:12000',
-              changeOrigin: true,
-              secure:false,
-              pathRewrite: {
-              '^/opens': ''
-              }
-            }
+      // '/api': {
+      //         target: 'https://lxpay.gateway.test.bolod.xin:19200',
+      //         changeOrigin: true,
+      //         secure:false,
+      //         pathRewrite: {
+      //         '^/api': ''
+      //         }
+      //       },
+      // '/opens': {
+      //         target: 'https://192.168.3.122:12000',
+      //         changeOrigin: true,
+      //         secure:false,
+      //         pathRewrite: {
+      //         '^/opens': ''
+      //         }
+      //       }
 
     },
 
